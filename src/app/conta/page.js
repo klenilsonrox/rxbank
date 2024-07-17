@@ -55,7 +55,6 @@ const Page = () => {
     try{
      setLoading(true)
     const { dataUser, dataAmount, dataTransactions,datContacts } = await getInfosFetch();
-   console.log(dataUser)
 
    if(dataUser){
     setUser(dataUser);
@@ -144,10 +143,9 @@ const Page = () => {
   }
 
   function openContatos(){
-    console.log("teste")
+
     setContatosOpen(true)
     settransacoesOpen(false)
-    console.log(contatosOpen)
   }
 
   function closeModalTransfContact(e){

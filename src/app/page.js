@@ -84,7 +84,7 @@ const page = () => {
           <div className='mt-8 bg-[#F7F8F7] h-[250px] p-4 rounded-md lg:flex items-start w-full lg:w-auto border-b border-l border-l-[#7228BC] border-b-[#7228BC]'>
             <div className='flex flex-col items-start'>
               <p className='text-xl leading-5 lg:leading-6'>comece a aproveitar <br /> agora</p>
-              <button className='button py-2 px-6 rounded-md text-white mt-10' onClick={openModalLogin}>Criar conta</button>
+              <button className='button py-2 px-6 rounded-md text-white mt-10' onClick={openModalCadastrof}>Criar conta</button>
             </div>
             <div className='relative'>
               <img src="./images/cartao.png" alt="" className='w-full max-w-[150px] relative bottom-[-40px] lg:top-10 top-[-60px] right-[-200px] lg:left-10' data-aos="fade-up"
