@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0E1013;
+}
+
+
+
+
+.animaModal{
+  animation: animeModal .5s ease-in-out;
+}
+
+
+@keyframes animeModal {
+  from{
+    transform: translate3d(0,-100px,0);
+    opacity: 0;
+  } to{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 8px;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+
+.animaLeft {
+  animation: animaLeft .5s ease-in-out;
+}
+
+@keyframes animaLeft {
+  from{
+transform: translate3d(0,0,100px);
+  } to{
+    transform: translate3d(0,0,0);
+  }
+}
+
+.button{
+  background: linear-gradient(#9b30f9, #84e);
+}
+
+.headerAndFooter{
+  background-image: linear-gradient(#9B30F9, #8844EE);
+}
+
+.deposito::after{
+  content: "";
+  width: 3px;
+  height: 12px;
+  top: 7px;
+  background: green;
+  display: block;
+  position: absolute;
+  left: -10px;
+}
+
+.transfere::after{
+  content: "";
+  width: 3px;
+  height: 12px;
+  top: 7px;
+  background: red;
+  display: block;
+  position: absolute;
+  left: -10px;
+}
+
+
+li.open {
+  height: 100px;
+}
